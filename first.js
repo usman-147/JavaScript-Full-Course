@@ -56,3 +56,10 @@ console.log(PI);
     const a=10;
     console.log(a);
 }
+// Primitive Data Types in JS
+let nul=null;
+console.log(typeof(nul)); // object
+let x=BigInt("123");
+console.log(typeof(x));
+let y=Symbol("Hello!");
+console.log(typeof(y));
