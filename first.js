@@ -29,3 +29,9 @@ let age=24;
 age=59;
 age=86;
 console.log(age);
+// Initialized Later
+let a;
+console.log(a); // prints undefined
+let a1;
+a1=10;
+console.log(a1);
