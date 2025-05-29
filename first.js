@@ -11,3 +11,11 @@ console.log(age);
 console.log(x);
 console.log(y);
 console.log(isFollow);
+// Variable Rules
+caseSensitive=null;
+CaseSensitive=null;
+onlyLettersDigitsUnderscore$=null;
+letterAtStarting=null;
+_AtStarting=null;
+$AtStarting=null;
+// 1Notvalid=null;
