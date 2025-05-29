@@ -3,13 +3,13 @@ console.log("Hello, Mohammed Usman!");
 // Variables in JS
 fullName="Mohammed Usman";
 age=21;
-x=null;
-y=undefined;
+NULL=null;
+UNDEFINED=undefined;
 isFollow=true;
 console.log(fullName);
 console.log(age);
-console.log(x);
-console.log(y);
+console.log(NULL);
+console.log(UNDEFINED);
 console.log(isFollow);
 // Variable Rules
 caseSensitive=null;
@@ -25,10 +25,10 @@ var age=59;
 var age=86;
 console.log(age);
 // Keyword: let
-let age=24;
-age=59;
-age=86;
-console.log(age);
+let age1=24;
+age1=59;
+age1=86;
+console.log(age1);
 // Initialized Later
 let a;
 console.log(a); // prints undefined
