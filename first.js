@@ -35,3 +35,12 @@ console.log(a); // prints undefined
 let a1;
 a1=10;
 console.log(a1);
+// Block Scope Variable
+{
+    let a=5;
+    console.log(a);
+}
+{
+    let a=10;
+    console.log(a);
+}
