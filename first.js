@@ -24,3 +24,8 @@ var age=24;
 var age=59;
 var age=86;
 console.log(age);
+// Keyword: let
+let age=24;
+age=59;
+age=86;
+console.log(age);
