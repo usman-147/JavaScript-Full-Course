@@ -76,3 +76,12 @@ console.log(student["age"]);
 //Update variables of objects
 student["age"]=student["age"]+1;
 student["name"]="Mohammed-Usman";
+// Practice Set 1
+const product = {
+    title:"Ball Pen",
+    rating:5,
+    isDeal:true,
+    price:270,
+    offer:50,
+}
+console.log(product);
