@@ -47,3 +47,12 @@ console.log(a1);
 // Keyword: const
 const PI=3.14;
 console.log(PI);
+// Block Scope Variable
+{
+    const a=5;
+    console.log(a);
+}
+{
+    const a=10;
+    console.log(a);
+}
