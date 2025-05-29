@@ -63,3 +63,13 @@ let x=BigInt("123");
 console.log(typeof(x));
 let y=Symbol("Hello!");
 console.log(typeof(y));
+// Non-Primitive Data Types in JS
+const student = {
+    name : "Mohammed Usman",
+    age : 21,
+    cgpa : 8.3,
+    isPass : true,
+};
+console.log(student);
+console.log(student.age);
+console.log(student["age"]);
