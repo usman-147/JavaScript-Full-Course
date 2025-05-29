@@ -44,3 +44,6 @@ console.log(a1);
     let a=10;
     console.log(a);
 }
+// Keyword: const
+const PI=3.14;
+console.log(PI);
