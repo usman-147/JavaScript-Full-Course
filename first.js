@@ -19,3 +19,8 @@ letterAtStarting=null;
 _AtStarting=null;
 $AtStarting=null;
 // 1Notvalid=null;
+// Keyword: var
+var age=24;
+var age=59;
+var age=86;
+console.log(age);
