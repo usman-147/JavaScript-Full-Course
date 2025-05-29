@@ -73,3 +73,6 @@ const student = {
 console.log(student);
 console.log(student.age);
 console.log(student["age"]);
+//Update variables of objects
+student["age"]=student["age"]+1;
+student["name"]="Mohammed-Usman";
