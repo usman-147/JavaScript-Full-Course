@@ -110,3 +110,12 @@ console.log("++a = ",a2);
 console.log("Pre-Decrement:")
 --b2;
 console.log("--b = ",b2);
+// Assignment Operators
+let ao=7;
+console.log("Assignment Operator: ",ao);
+console.log("a+=1",ao+=1);
+console.log("a-=2",ao-=2);
+console.log("a*=3",ao*=3);
+console.log("a/=4",ao/=4);
+console.log("a%=5",ao%=5);
+console.log("a**=6",ao**=6);
