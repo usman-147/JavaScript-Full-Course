@@ -132,3 +132,10 @@ console.log("5 == 5",eq==eq1);
 let neq=5;
 let neq1=2;
 console.log("5 != 2",neq!=neq1);
+let tc_num=5;
+let tc_str="5"; // string 5 get's typecasted to num 5
+console.log("Typecasting num to str: ",tc_num==tc_str);
+// Stricter version doesn't typecast
+let sv=5;
+let sv1="5";
+console.log("Doesn't typecast: ",sv===sv1);
