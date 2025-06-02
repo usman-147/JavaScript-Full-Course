@@ -139,3 +139,13 @@ console.log("Typecasting num to str: ",tc_num==tc_str);
 let sv=5;
 let sv1="5";
 console.log("Doesn't typecast: ",sv===sv1);
+// Logical Operators
+let lo=6;
+let lo1=5;
+let cond1 = lo!==lo1; // true
+let cond2 = lo>lo1; // true
+console.log("6 !== 5 && 6>5 ", cond && cond1); // true
+let cond3 = lo===lo1; // false
+let cond4 = lo>=lo1; // true
+console.log("6===5 && 6>=5", cond3 || cond4);
+console.log("Inverting cond3 ", !(cond3));
