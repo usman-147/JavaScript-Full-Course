@@ -119,3 +119,16 @@ console.log("a*=3",ao*=3);
 console.log("a/=4",ao/=4);
 console.log("a%=5",ao%=5);
 console.log("a**=6",ao**=6);
+// Comparison Operators returns boolean value
+let c=5;
+let c1=4;
+console.log("5 > 4",c>c1);
+console.log("5 >= 4",c>=c1);
+console.log("5 < 4",c<c1);
+console.log("5 <= 4",c<=c1);
+let eq=5;
+let eq1=5;
+console.log("5 == 5",eq==eq1);
+let neq=5;
+let neq1=2;
+console.log("5 != 2",neq!=neq1);
