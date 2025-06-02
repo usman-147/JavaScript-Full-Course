@@ -144,8 +144,13 @@ let lo=6;
 let lo1=5;
 let cond1 = lo!==lo1; // true
 let cond2 = lo>lo1; // true
-console.log("6 !== 5 && 6>5 ", cond && cond1); // true
+console.log("6 !== 5 && 6>5 ", cond1 && cond2); // true
 let cond3 = lo===lo1; // false
 let cond4 = lo>=lo1; // true
 console.log("6===5 && 6>=5", cond3 || cond4);
 console.log("Inverting cond3 ", !(cond3));
+// Ternary Operators
+let age2 = 25;
+let result = age2>=18 ? "adult" : "not adult";
+console.log(result);
+age2<=18 ? console.log("adult") : console.log("not adult");
