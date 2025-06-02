@@ -85,3 +85,14 @@ const product = {
     offer:50,
 }
 console.log(product);
+//Arithmetic Operators
+let a2=5;
+let b2=2;
+// let c=a+b;
+console.log("a =",a2,"& b =",b);
+console.log("a + b = ",a2+b2);
+console.log("a - b = ",a2-b2);
+console.log("a * b = ",a2*b2);
+console.log("a / b = ",a2/b2);
+console.log("a % b = ",a2%b2);
+console.log("a ** b = ",a2**b2);
