@@ -89,10 +89,24 @@ console.log(product);
 let a2=5;
 let b2=2;
 // let c=a+b;
-console.log("a =",a2,"& b =",b);
+console.log("a =",a2,"& b =",b2);
 console.log("a + b = ",a2+b2);
 console.log("a - b = ",a2-b2);
 console.log("a * b = ",a2*b2);
 console.log("a / b = ",a2/b2);
 console.log("a % b = ",a2%b2);
 console.log("a ** b = ",a2**b2);
+// Unary Operators
+console.log("Unary Operators:");
+console.log("Post-Increment:");
+a2++;
+console.log("a++ = ",a2);
+console.log("Post-Decrement:");
+b2--;
+console.log("b-- = ",b2);
+console.log("Pre-Increment:")
+++a2;
+console.log("++a = ",a2);
+console.log("Pre-Decrement:")
+--b2;
+console.log("--b = ",b2);
