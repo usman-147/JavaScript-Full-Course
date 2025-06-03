@@ -154,3 +154,14 @@ let age2 = 25;
 let result = age2>=18 ? "adult" : "not adult";
 console.log(result);
 age2<=18 ? console.log("adult") : console.log("not adult");
+// Conditional Statements
+// if statement 
+let mode = "dark";
+let color;
+if(mode === "dark"){
+    color="black";
+}
+if(mode === "light"){
+    color="white";
+}
+console.log(color);
