@@ -257,3 +257,12 @@ do{
      console.log("Runs atleast 1 time");
      i2++;
 }while(i2<=10); // bcoz checks the condition later
+// for-of loop
+let str="Mohammed Usman";
+let size=0; // so that when 1 character prints the count is 1
+// same as for-each loop in Java : is replaced by of
+for(let val of str){ //iterator -> character
+    console.log("Value = ",val);
+    size++;
+}
+console.log("Size of string = ",size);
