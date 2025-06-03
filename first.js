@@ -240,3 +240,8 @@ for(let i=1;i<=5;i++){
     sum=sum+i;
 }
 console.log("sum = ",sum);
+// Print 1 to 5
+for(var i=0;i<=5;i++){ // prefer using let
+    console.log("i = ",i);
+}
+console.log(i); //var would print 6, bcoz it's a global variable, whereas let would give ERROR bcoz it's a block-scope
