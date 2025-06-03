@@ -298,3 +298,10 @@ console.log("First Character of Last Name is:",str[9]);
 // Template Literals in JS
 let speacialString = `This is a template literal`;
 console.log(speacialString);
+let obj = {
+    item:'pen',
+    price:10,
+};
+// console.log("The cost of", obj.item, "is", obj.price, "rupees.");
+let output=`${1+2+3}The cost of ${obj.item} is ${obj.price} rupees.`
+console.log(output);
