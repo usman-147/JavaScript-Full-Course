@@ -318,6 +318,10 @@ let stuc="mohammedusman"
 // stuc.toUpperCase(); will not tamper
 stuc=stuc.toUpperCase(); //will modify as let variable could be updated
 console.log(`Coverted from Lower to Upper: ${stuc}`);
+// toLowerCase()
 let stlc="MOHAMMED USMAN";
 stlc=stlc.toLowerCase();
 console.log(`Coverted from Lower to Upper: ${stlc}`);
+// trim() - removes whitespaces only at the start and end of a string not in between the string
+let trim="      Testing Trim    in JS   ";
+console.log(`Trimmed String: ${trim.trim()}`);
