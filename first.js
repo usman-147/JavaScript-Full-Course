@@ -343,3 +343,8 @@ console.log(`All Replaced Version: ${replaceAll.replaceAll("lo","lp")}`);
 let charAt="ILoveJS";
 console.log(`Feasible Method: ${charAt[0]}`);
 console.log(`Functional Method: ${charAt.charAt(0)}`);
+// Practice Set 4
+let userName=prompt("Enter your Full Name:");
+let attherate="@";
+let count=userName.length;
+console.log(`Generated username is ${attherate.concat(userName,count)}`);
