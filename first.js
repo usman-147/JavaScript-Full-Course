@@ -330,3 +330,7 @@ let numslice="0123456789";
 console.log(`Sliced version: ${numslice.slice(2,7)}`); // starting index is mandatory
 let strslice="EStarting";
 console.log(`Sliced version with only starting: ${strslice.slice(1)}`); // slicing 0 from 1 prints the complete string
+// concat()
+let con1="Mohammed";
+let cat2="Usman";
+console.log(`Concatenating str2 to str1: ${con1.concat(cat2)}`);
