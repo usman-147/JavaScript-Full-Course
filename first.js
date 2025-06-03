@@ -325,3 +325,8 @@ console.log(`Coverted from Lower to Upper: ${stlc}`);
 // trim() - removes whitespaces only at the start and end of a string not in between the string
 let trim="      Testing Trim    in JS   ";
 console.log(`Trimmed String: ${trim.trim()}`);
+// slice(starting,ending) // ending index is a non-inclusive sequence means it doesn't get printed
+let numslice="0123456789";
+console.log(`Sliced version: ${numslice.slice(2,7)}`); // starting index is mandatory
+let strslice="EStarting";
+console.log(`Sliced version with only starting: ${strslice.slice(1)}`); // slicing 0 from 1 prints the complete string
