@@ -318,3 +318,6 @@ let stuc="mohammedusman"
 // stuc.toUpperCase(); will not tamper
 stuc=stuc.toUpperCase(); //will modify as let variable could be updated
 console.log(`Coverted from Lower to Upper: ${stuc}`);
+let stlc="MOHAMMED USMAN";
+stlc=stlc.toLowerCase();
+console.log(`Coverted from Lower to Upper: ${stlc}`);
