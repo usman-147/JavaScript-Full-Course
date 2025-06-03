@@ -295,3 +295,6 @@ console.log("Congratulations! You guessed the correct number.");
 console.log(str.length);
 console.log("First Character of First Name is:",str[0]);
 console.log("First Character of Last Name is:",str[9]);
+// Template Literals in JS
+let speacialString = `This is a template literal`;
+console.log(speacialString);
