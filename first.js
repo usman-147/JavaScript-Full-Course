@@ -283,3 +283,10 @@ for(let ps3=0;ps3<=100;ps3++){
         console.log("Even = ",ps3);
     }
 }
+// Guessing random game number
+let gameNum=25; // in order to match with prompt make gameNum="25";
+let userNum=prompt("Guess the game number:");
+while(userNum!=gameNum){ // why !== bcoz prompt takes string, so it won't match with int
+    userNum = prompt("You guessed the wrong number. Guess again!"); // let can be updated
+}
+console.log("Congratulations! You guessed the correct number.");
