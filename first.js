@@ -290,3 +290,8 @@ while(userNum!=gameNum){ // why !== bcoz prompt takes string, so it won't match 
     userNum = prompt("You guessed the wrong number. Guess again!"); // let can be updated
 }
 console.log("Congratulations! You guessed the correct number.");
+// String in JS
+// let str="Mohammed Usman";
+console.log(str.length);
+console.log("First Character of First Name is:",str[0]);
+console.log("First Character of Last Name is:",str[9]);
