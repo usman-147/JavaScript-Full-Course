@@ -277,3 +277,9 @@ console.log("Size of string = ",size);
 for(let key in student){
     console.log("Key = ",key,"and Value = ",student[key]); //student["key"] will try to find actual key named key in student object
 }
+// Practice Set 3
+for(let ps3=0;ps3<=100;ps3++){
+    if(ps3%2===0){ // === even !== odd
+        console.log("Even = ",ps3);
+    }
+}
