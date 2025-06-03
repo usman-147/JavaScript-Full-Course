@@ -305,3 +305,10 @@ let obj = {
 // console.log("The cost of", obj.item, "is", obj.price, "rupees.");
 let output=`${1+2+3}The cost of ${obj.item} is ${obj.price} rupees.`
 console.log(output);
+// Escape Characters
+let slashN=`Next\nLine`;
+console.log(slashN);
+console.log("Length = ",slashN.length) // \n counted as 1 character
+let slashT=`Tab\tSpace`;
+console.log(slashT);
+console.log("Length = ",slashT.length) // \t counted as 1 character
