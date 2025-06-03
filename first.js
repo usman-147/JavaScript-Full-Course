@@ -246,8 +246,14 @@ for(var i=0;i<=5;i++){ // prefer using let
 }
 console.log(i); //var would print 6, bcoz it's a global variable, whereas let would give ERROR bcoz it's a block-scope
 // while loop
-let i=1;
-while(i<=10){
+let i1=1;
+while(i1<=10){
      console.log("While = For");
-     i++;
+     i1++;
 }
+// do-while loop
+let i2=20;
+do{
+     console.log("Runs atleast 1 time");
+     i2++;
+}while(i2<=10); // bcoz checks the condition later
