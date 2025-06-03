@@ -338,3 +338,5 @@ console.log(`Concatenating str2 to str1: ${con1.concat(cat2)}`);
 // replace(searchVal,newVal)
 let replace="hello";
 console.log(`Replaced String: ${replace.replace("h","m")}`);
+let replaceAll="helololo";
+console.log(`All Replaced Version: ${replaceAll.replaceAll("lo","lp")}`);
