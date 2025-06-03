@@ -266,3 +266,14 @@ for(let val of str){ //iterator -> character
     size++;
 }
 console.log("Size of string = ",size);
+// for-in loop
+// previously used example
+// const student = {
+//     name : "Mohammed Usman",
+//     age : 21,
+//     cgpa : 8.3,
+//     isPass : true,
+// };
+for(let key in student){
+    console.log("Key = ",key,"and Value = ",student[key]); //student["key"] will try to find actual key named key in student object
+}
