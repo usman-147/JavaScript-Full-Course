@@ -172,3 +172,12 @@ if(num%2 === 0){
 }else{
     console.log(num,"is odd");
 }
+// else-if statement
+console.log(age);
+if(age<18){
+    console.log("junior");
+}else if(age>60){
+    console.log("senior");
+}else{
+    console.log("middle");
+}
