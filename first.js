@@ -194,3 +194,39 @@ switch (expr) {
   default:
     console.log(`Sorry, we are out of ${expr}.`);
 }
+// Practice Set 2
+let number = prompt("Enter a number:");
+if(number%5 === 0){
+    console.log(number, "is a multiple 0f 5!");
+}else{
+    console.log(number, "is not a multiple of 5!");
+}
+// My solution - Not Feasible
+// let grade=85;
+// console.log("Grade: ",grade);
+// if(grade>90 || grade===100){
+//     console.log("A");
+// }else if(grade>70 || grade===89){
+//     console.log("B");
+// }else if(grade>60 || grade===69){
+//     console.log("C");
+// }else if(grade>50 || grade===59){
+//     console.log("D");
+// }else{
+//     console.log("F");
+// }
+// Shradha Khapra's Solution - Feasible
+let score=prompt("Enter your score(0-100):");
+let grade;
+if(score>=90 && score<=100){
+    grade="A";
+}else if(score>=80 && score<=89){
+    grade="B";
+}else if(score>=70 && score<=79){
+    grade="C";
+}else if(score>=60 && score<=69){
+    grade="D";
+}else{
+    grade="F";
+}
+console.log("According to your score, your Grade is:",grade);
