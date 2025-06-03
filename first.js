@@ -234,3 +234,9 @@ console.log("According to your score, your Grade is:",grade);
 for(let count=1;count<=5;count++){
     console.log("Hello! NooB Usman");
 }
+// Calculate sum of 1 to 5
+let sum=0;
+for(let i=1;i<=5;i++){
+    sum=sum+i;
+}
+console.log("sum = ",sum);
