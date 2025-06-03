@@ -340,3 +340,6 @@ let replace="hello";
 console.log(`Replaced String: ${replace.replace("h","m")}`);
 let replaceAll="helololo";
 console.log(`All Replaced Version: ${replaceAll.replaceAll("lo","lp")}`);
+let charAt="ILoveJS";
+console.log(`Feasible Method: ${charAt[0]}`);
+console.log(`Functional Method: ${charAt.charAt(0)}`);
