@@ -230,3 +230,7 @@ if(score>=90 && score<=100){
     grade="F";
 }
 console.log("According to your score, your Grade is:",grade);
+// Loops in JS
+for(let count=1;count<=5;count++){
+    console.log("Hello! NooB Usman");
+}
