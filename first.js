@@ -303,12 +303,18 @@ let obj = {
     price:10,
 };
 // console.log("The cost of", obj.item, "is", obj.price, "rupees.");
-let output=`${1+2+3}The cost of ${obj.item} is ${obj.price} rupees.`
+let output=`${1+2+3}The cost of ${obj.item} is ${obj.price} rupees.`;
 console.log(output);
 // Escape Characters
 let slashN=`Next\nLine`;
 console.log(slashN);
-console.log("Length = ",slashN.length) // \n counted as 1 character
+console.log(`Length = ${slashN.length}`); // \n counted as 1 character
 let slashT=`Tab\tSpace`;
 console.log(slashT);
-console.log("Length = ",slashT.length) // \t counted as 1 character
+console.log(`Length = ${slashT.length}`); // \t counted as 1 character
+// String Methods in JS
+// toUpperCase()
+let stuc="mohammedusman"
+// stuc.toUpperCase(); will not tamper
+stuc=stuc.toUpperCase(); //will modify as let variable could be updated
+console.log(`Coverted from Lower to Upper: ${stuc}`);
