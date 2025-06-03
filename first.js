@@ -334,3 +334,7 @@ console.log(`Sliced version with only starting: ${strslice.slice(1)}`); // slici
 let con1="Mohammed";
 let cat2="Usman";
 console.log(`Concatenating str2 to str1: ${con1.concat(cat2)}`);
+// let result=con1+cat2; this is also string concatenation
+// replace(searchVal,newVal)
+let replace="hello";
+console.log(`Replaced String: ${replace.replace("h","m")}`);
