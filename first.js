@@ -245,3 +245,9 @@ for(var i=0;i<=5;i++){ // prefer using let
     console.log("i = ",i);
 }
 console.log(i); //var would print 6, bcoz it's a global variable, whereas let would give ERROR bcoz it's a block-scope
+// while loop
+let i=1;
+while(i<=10){
+     console.log("While = For");
+     i++;
+}
