@@ -349,8 +349,13 @@ let attherate="@";
 let count=userName.length;
 console.log(`Generated username is ${attherate.concat(userName,count)}`);
 // Arrays in JS
-let marks=[97.82,75,64,36];
+let marks=[97,82,75,64,36];
 console.log(marks);
 console.log(marks.length);
 console.log(typeof marks); // object
 let info=["Usman",22,"Bangalore"]; // mixing of types not preferred
+// Array Indices
+console.log(marks);
+marks[0]=86;
+console.log(marks);
+console.log(marks[100]); // undefined: if value at the index doesn't exist
