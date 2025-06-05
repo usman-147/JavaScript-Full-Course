@@ -348,3 +348,9 @@ let userName=prompt("Enter your Full Name:");
 let attherate="@";
 let count=userName.length;
 console.log(`Generated username is ${attherate.concat(userName,count)}`);
+// Arrays in JS
+let marks=[97.82,75,64,36];
+console.log(marks);
+console.log(marks.length);
+console.log(typeof marks); // object
+let info=["Usman",22,"Bangalore"]; // mixing of types not preferred
