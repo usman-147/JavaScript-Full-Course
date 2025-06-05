@@ -413,3 +413,9 @@ console.log(`Deleted item: ${deletedVal}`);
 console.log(`Original Array = ${foodItems}`);
 console.log(`Array after toString() = ${foodItems.toString()}`);
 console.log(`But, Original Array remains same = ${foodItems}`);
+// array1.concat(array2,array3)
+let marvelHeroes=["ironman","spiderman","thor"];
+let dcHeroes=["superman","batman"];
+let indianHeroes=["shaktiman","krishna"];
+let heroes= marvelHeroes.concat(dcHeroes,indianHeroes);
+console.log(heroes);
