@@ -440,3 +440,8 @@ let arr=[1,2,3,4,5,6,7];
 arr.splice(4) // from the index 4 it will delete all the rest
 console.log(arr); // new arr will be printed
 console.log(arr.splice()); // but, empty splice won't delete a thing. So, value must be passed
+// Practice Set 6
+let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+console.log(`Removing the first company frrom array ${companies.shift()}`);
+console.log(`Removing Uber and adding Ola in it's place ${companies.splice(2,1,"Ola")}`);
+console.log(`Adding Amazon at the end ${companies.push("Amazon")}`);
