@@ -428,3 +428,15 @@ console.log(`After shift() = ${indianHeroes}`);
 // slice(startIndex,endIndex)
 console.log(`After slice() = ${marvelHeroes.slice(1,2)}`); // returns only 1
 // console.log(`After slice() = ${marvelHeroes.slice()}`); DUPLICATES the array by making a copy of it
+// splice(startIndex,deleteCount,newEle1,newEle2)
+let arr=[1,2,3,4,5,6,7];
+// arr.splice(2,2,101,102);
+// Add Element
+// arr.splice(2,0,101);
+// Delete Element
+// arr.splice(3,1);
+// Replace Element
+// arr.splice(3,1,101);
+arr.splice(4) // from the index 4 it will delete all the rest
+console.log(arr); // new arr will be printed
+console.log(arr.splice()); // but, empty splice won't delete a thing. So, value must be passed
