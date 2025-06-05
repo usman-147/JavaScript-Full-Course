@@ -404,7 +404,7 @@ let foodItems=["potato","apple","litchi","tomato"];
 console.log(`Original Array = ${foodItems}`);
 foodItems.push("burger","pizza","chips");
 console.log(`Array after push() = ${foodItems}`);
-// pop(value)
+// pop(value) - deletes at END
 console.log(`Original Array = ${foodItems}`);
 let deletedVal=foodItems.pop(); // deletes last item
 console.log(`Array after pop() = ${foodItems}`);
@@ -416,9 +416,12 @@ console.log(`But, Original Array remains same = ${foodItems}`);
 // array1.concat(array2,array3)
 let marvelHeroes=["ironman","spiderman","thor"];
 let dcHeroes=["superman","batman"];
-let indianHeroes=["shaktiman","krishna"];
+let indianHeroes=["shaktiman","krish"];
 let heroes= marvelHeroes.concat(dcHeroes,indianHeroes);
 console.log(heroes);
-// unshift(value)
+// unshift(value) - adds at START
 marvelHeroes.unshift("antman");
-console.log(`After shift() = ${marvelHeroes}`);
+console.log(`After unshift() = ${marvelHeroes}`);
+// shift(value) - deletes at START
+indianHeroes.shift();
+console.log(`After shift() = ${indianHeroes}`);
