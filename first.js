@@ -381,3 +381,20 @@ for(let val of marks){
 }
 console.log(`Sum = ${som}`);
 console.log(`Average = ${som/marks.length}`);
+// Calculating offer on items
+let prices=[250,645,300,900,50];
+// let i=0;
+// console.log("for-of loop");
+// for(let val of prices){
+//     // console.log(`value at index ${i} = ${val}`);
+//     let offer=val/10;
+//     prices[i]=prices[i]-offer;
+//     console.log(`value after offer = ${prices[i]}`);
+//     // i++;
+// }
+console.log("basic for loop");
+for(let i=0;i<prices.length;i++){
+    let offer=prices[i]/10;
+    prices[i]-=offer;
+    console.log(`value after offer = ${prices[i]}`);    
+}
