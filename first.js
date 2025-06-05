@@ -398,3 +398,9 @@ for(let i=0;i<prices.length;i++){
     prices[i]-=offer;
     console.log(`value after offer = ${prices[i]}`);    
 }
+// Array Methods in JS
+// push(value)
+let foodItems=["potato","apple","litchi","tomato"];
+console.log(`Original Array = ${foodItems}`);
+foodItems.push("burger","pizza","chips");
+console.log(`Array after push() = ${foodItems}`);
