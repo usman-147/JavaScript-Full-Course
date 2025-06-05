@@ -399,7 +399,7 @@ for(let i=0;i<prices.length;i++){
     console.log(`value after offer = ${prices[i]}`);    
 }
 // Array Methods in JS
-// push(value)
+// push(value) - adds at END
 let foodItems=["potato","apple","litchi","tomato"];
 console.log(`Original Array = ${foodItems}`);
 foodItems.push("burger","pizza","chips");
@@ -419,3 +419,6 @@ let dcHeroes=["superman","batman"];
 let indianHeroes=["shaktiman","krishna"];
 let heroes= marvelHeroes.concat(dcHeroes,indianHeroes);
 console.log(heroes);
+// unshift(value)
+marvelHeroes.unshift("antman");
+console.log(`After shift() = ${marvelHeroes}`);
