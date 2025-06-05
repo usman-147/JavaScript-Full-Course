@@ -353,9 +353,20 @@ let marks=[97,82,75,64,36];
 console.log(marks);
 console.log(marks.length);
 console.log(typeof marks); // object
-let info=["Usman",22,"Bangalore"]; // mixing of types not preferred
+let info=["Usman",21,"Bangalore"]; // mixing of types not preferred
 // Array Indices
 console.log(marks);
 marks[0]=86;
 console.log(marks);
 console.log(marks[100]); // undefined: if value at the index doesn't exist
+// Looping over an Array
+for(let i=0;i<marks.length;i++){ //marks.length = index+1;
+    console.log(marks[i]);
+}
+// for(let i=1;i<=marks.length;i++){ 
+//     console.log(marks[i-1]); why i-1?? it skips first index so 1-1=0, 2-1=1; 3-1=2; 4-1=3; 5-1=4; prints all 0-4: 5 values
+// }
+// for-of loop
+for(let mark of marks){
+    console.log(mark);
+}
