@@ -404,3 +404,8 @@ let foodItems=["potato","apple","litchi","tomato"];
 console.log(`Original Array = ${foodItems}`);
 foodItems.push("burger","pizza","chips");
 console.log(`Array after push() = ${foodItems}`);
+// pop(value)
+console.log(`Original Array = ${foodItems}`);
+let deletedVal=foodItems.pop(); // deletes last item
+console.log(`Array after pop() = ${foodItems}`);
+console.log(`Deleted item: ${deletedVal}`);
