@@ -409,3 +409,7 @@ console.log(`Original Array = ${foodItems}`);
 let deletedVal=foodItems.pop(); // deletes last item
 console.log(`Array after pop() = ${foodItems}`);
 console.log(`Deleted item: ${deletedVal}`);
+// toString()
+console.log(`Original Array = ${foodItems}`);
+console.log(`Array after toString() = ${foodItems.toString()}`);
+console.log(`But, Original Array remains same = ${foodItems}`);
