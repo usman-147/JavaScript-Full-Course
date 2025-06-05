@@ -366,7 +366,18 @@ for(let i=0;i<marks.length;i++){ //marks.length = index+1;
 // for(let i=1;i<=marks.length;i++){ 
 //     console.log(marks[i-1]); why i-1?? it skips first index so 1-1=0, 2-1=1; 3-1=2; 4-1=3; 5-1=4; prints all 0-4: 5 values
 // }
-// for-of loop
+console.log("for-of loop");
 for(let mark of marks){
     console.log(mark);
 }
+// Practice Set 5
+console.log(marks);
+som=0;
+// for(let i=0;i<marks.length;i++){
+//     som+=marks[i]; // som=+i; doesn't work bcoz i is just the index not the value
+// }
+for(let val of marks){
+    som+=val;
+}
+console.log(`Sum = ${som}`);
+console.log(`Average = ${som/marks.length}`);
