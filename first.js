@@ -425,3 +425,6 @@ console.log(`After unshift() = ${marvelHeroes}`);
 // shift(value) - deletes at START
 indianHeroes.shift();
 console.log(`After shift() = ${indianHeroes}`);
+// slice(startIndex,endIndex)
+console.log(`After slice() = ${marvelHeroes.slice(1,2)}`); // returns only 1
+// console.log(`After slice() = ${marvelHeroes.slice()}`); DUPLICATES the array by making a copy of it
