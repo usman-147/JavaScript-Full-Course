@@ -451,3 +451,8 @@ function myFunction(){
     console.log("We are back learning JS!!");
 }
 myFunction();
+// Functions with parameters
+function myFunction1(msg,n){
+    console.log(msg*n); // error NaN : Not a Number
+}
+myFunction1("hello",100);
