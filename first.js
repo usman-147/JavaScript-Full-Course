@@ -457,14 +457,14 @@ function myFunction1(msg,n){
 }
 myFunction1("hello",100);
 //  Function to calculate sum of 2 numbers
-function sum(x,y){
+function functionSum(x,y){
     console.log("before return");
     s=x+y;
     return s;
     console.log("after return"); // nothing works after return statement is used
 }
 // sum(4,7);
-let value=sum(4,7);
+let value=functionSum(4,7);
 console.log(value);
 // Arrow Functions for Sum
 const arrowSum = (a,b) => {
@@ -477,3 +477,25 @@ const arrowMul = (a,b) => {
     return a*b;
 }
 console.log(arrowMul(4,3)); // prints 12
+// Practice Set 7
+function countVowels(str){
+    let cuntVowels=0;
+    for(const char of str){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            cuntVowels++;
+        }
+    }
+    console.log(cuntVowels);
+}
+countVowels("hello");
+// same using arrow functions
+const cuntVowels = (stri) => {
+    let cuntVowels=0;
+    for(const char of stri){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            cuntVowels++;
+        }
+    }
+    console.log(cuntVowels);
+}
+cuntVowels("usos");
