@@ -445,3 +445,9 @@ let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
 console.log(`Removing the first company frrom array ${companies.shift()}`);
 console.log(`Removing Uber and adding Ola in it's place ${companies.splice(2,1,"Ola")}`);
 console.log(`Adding Amazon at the end ${companies.push("Amazon")}`);
+// Functions in JS
+function myFunction(){
+    console.log("Welcome to the Usos Penetentionary!");
+    console.log("We are back learning JS!!");
+}
+myFunction();
