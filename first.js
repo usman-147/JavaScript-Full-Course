@@ -472,3 +472,8 @@ const arrowSum = (a,b) => {
 }
 console.log(arrowSum); // doesn't perform calculation. prints the whole function as it is
 console.log(arrowSum(4,7)); // prints 11
+// Arrow functions for Mul
+const arrowMul = (a,b) => {
+    return a*b;
+}
+console.log(arrowMul(4,3)); // prints 12
