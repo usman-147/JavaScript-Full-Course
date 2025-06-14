@@ -466,3 +466,9 @@ function sum(x,y){
 // sum(4,7);
 let value=sum(4,7);
 console.log(value);
+// Arrow Functions for Sum
+const arrowSum = (a,b) => {
+    console.log(a+b);
+}
+console.log(arrowSum); // doesn't perform calculation. prints the whole function as it is
+console.log(arrowSum(4,7)); // prints 11
