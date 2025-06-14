@@ -456,3 +456,13 @@ function myFunction1(msg,n){
     console.log(msg*n); // error NaN : Not a Number
 }
 myFunction1("hello",100);
+//  Function to calculate sum of 2 numbers
+function sum(x,y){
+    console.log("before return");
+    s=x+y;
+    return s;
+    console.log("after return"); // nothing works after return statement is used
+}
+// sum(4,7);
+let value=sum(4,7);
+console.log(value);
