@@ -520,3 +520,13 @@ let city=["Bangalore","Chennai","Hyderabad","Coimbatore"];
 city.forEach((val, idx, city) => {
     console.log(`Callback inside forEach can take 3 parameters ${val.toUpperCase,idx,city}`);
 })
+// Practice Set 8
+let numbers=[0,1,2,3,4,5,6,7,8,9];
+numbers.forEach((val) => {
+    console.log(`Square of each array value using forEach loop ${val*val}`);
+})
+// Alternate method of storing a function inside variable
+let calcSquare = (val) => {
+    console.log(`Square of each array value using forEach loop ${val*val}`);
+}
+numbers.forEach(calcSquare); // Function definition written inside variable calcSquare
