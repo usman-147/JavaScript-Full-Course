@@ -499,7 +499,7 @@ const cuntVowels = (stri) => {
     console.log(`Counting Voowels using arrow function: ${cuntVowels}`);
 }
 cuntVowels("usos");
-// Callback Functions
+// Callback Functions: abc, Higher Order Functions: myFunc
 function abc(){
     console.log("hello");
 }
@@ -526,7 +526,13 @@ numbers.forEach((val) => {
     console.log(`Square of each array value using forEach loop ${val*val}`);
 })
 // Alternate method of storing a function inside variable
-let calcSquare = (val) => {
-    console.log(`Square of each array value using forEach loop ${val*val}`);
-}
-numbers.forEach(calcSquare); // Function definition written inside variable calcSquare
+// let calcSquare = (val) => {
+//     console.log(`Square of each array value using forEach loop ${val*val}`);
+// }
+// numbers.forEach(calcSquare); // Function definition written inside variable calcSquare
+// Array Methods
+// 1) Map
+let newArr=numbers.map((val)=>{
+    return val*2;
+})
+console.log(`Map Method returns a new array ${newArr}`);
