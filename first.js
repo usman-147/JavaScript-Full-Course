@@ -536,3 +536,8 @@ let newArr=numbers.map((val)=>{
     return val*2;
 })
 console.log(`Map Method returns a new array ${newArr}`);
+// 2) Filter
+let evenArr=numbers.filter((val) => {
+    return val %2===0;
+})
+console.log(`Filter Method returns a new array ${evenArr}`);
