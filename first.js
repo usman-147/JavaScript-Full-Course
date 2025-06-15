@@ -533,11 +533,16 @@ numbers.forEach((val) => {
 // Array Methods
 // 1) Map
 let newArr=numbers.map((val)=>{
-    return val*2;
+    return val*2; // double
 })
 console.log(`Map Method returns a new array ${newArr}`);
 // 2) Filter
 let evenArr=numbers.filter((val) => {
-    return val %2===0;
+    return val %2===0; // even
 })
 console.log(`Filter Method returns a new array ${evenArr}`);
+// 3) Reduce
+const output1=numbers.reduce((prev,curr) => {
+    return prev > curr ? prev : curr; // largest
+})
+console.log(`Reduce method works by taking two indices and produes single output ${output1}`);
