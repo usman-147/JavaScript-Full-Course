@@ -485,7 +485,7 @@ function countVowels(str){
             cuntVowels++;
         }
     }
-    console.log(cuntVowels);
+    console.log(`Counting Vowels using normal function: ${cuntVowels}`);
 }
 countVowels("hello");
 // same using arrow functions
@@ -496,7 +496,7 @@ const cuntVowels = (stri) => {
             cuntVowels++;
         }
     }
-    console.log(cuntVowels);
+    console.log(`Counting Voowels using arrow function: ${cuntVowels}`);
 }
 cuntVowels("usos");
 // Callback Functions
@@ -506,3 +506,8 @@ function abc(){
 function myFunc(abc){ // Functions can be passed as an argument
     return abc; // and can be return also
 }
+// Internal Callback Functions
+let arra=[1,2,3,4,5];
+arra.forEach(function printVal(val){
+    console.log(`Using forEach to print values of array: ${val}`);
+})
