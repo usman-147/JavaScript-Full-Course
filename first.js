@@ -515,3 +515,8 @@ arra.forEach(function printVal(val){
 arra.forEach((val) => {
     console.log(`Callback in the form of Arrow Function ${val}`);
 })
+// Callback inside forEach can take 3 parameters
+let city=["Bangalore","Chennai","Hyderabad","Coimbatore"];
+city.forEach((val, idx, city) => {
+    console.log(`Callback inside forEach can take 3 parameters ${val.toUpperCase,idx,city}`);
+})
