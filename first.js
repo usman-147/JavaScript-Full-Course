@@ -463,7 +463,7 @@ function functionSum(x,y){
     return s;
     console.log("after return"); // nothing works after return statement is used
 }
-// sum(4,7);
+// functionSum(4,7);
 let value=functionSum(4,7);
 console.log(value);
 // Arrow Functions for Sum
@@ -499,3 +499,10 @@ const cuntVowels = (stri) => {
     console.log(cuntVowels);
 }
 cuntVowels("usos");
+// Callback Functions
+function abc(){
+    console.log("hello");
+}
+function myFunc(abc){ // Functions can be passed as an argument
+    return abc; // and can be return also
+}
