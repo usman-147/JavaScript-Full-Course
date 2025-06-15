@@ -546,3 +546,20 @@ const output1=numbers.reduce((prev,curr) => {
     return prev > curr ? prev : curr; // largest
 })
 console.log(`Reduce method works by taking two indices and produes single output ${output1}`);
+// Practice Set 9
+// Filter Method
+let marksofStud=[35,69,75,84,92,95,99];
+let greatermarks=marksofStud.filter((val)=>{
+    return val > 90;
+})
+console.log(`Filtering out marks of students who scored greater than 90 ${greatermarks}`);
+// Reduce Method
+let n=prompt(`Enter a number to create an array:`);
+let arrar=[];
+for(let i=1;i<=n;i++){
+    arrar[i-1]=i; // why i-1? bcoz i=1. i is starting from 1, but index must be 0
+}
+let sumArray=arrar.reduce((prev,curr)=>{
+    return prev+curr;
+})  
+console.log(`Reduce method to calculate sum of all numbers in the array ${sumArray}`);
