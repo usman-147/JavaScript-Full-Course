@@ -511,3 +511,7 @@ let arra=[1,2,3,4,5];
 arra.forEach(function printVal(val){
     console.log(`Using forEach to print values of array: ${val}`);
 })
+// Callback in the form of Arrow Function
+arra.forEach((val) => {
+    console.log(`Callback in the form of Arrow Function ${val}`);
+})
