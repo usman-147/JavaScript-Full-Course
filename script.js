@@ -21,3 +21,15 @@ evtobj.onclick = (e) => {
     console.log(e.target);
     console.log(`Horizontal clicking position: ${e.clientX} Vertical clicking position: ${e.clientY}`);
 };
+
+let evtlst = document.querySelector("#evtlst");
+
+evtlst.addEventListener("click", (e) => {
+    console.log("Event listener was clicked - Handler1");
+    console.log(e);
+    console.log(e.type);
+});
+
+evtlst.addEventListener("click", (e) => {
+    console.log("Event listener was clicked - Handler2");
+});
