@@ -33,3 +33,13 @@ evtlst.addEventListener("click", (e) => {
 evtlst.addEventListener("click", (e) => {
     console.log("Event listener was clicked - Handler2");
 });
+
+const handler3 = () => {
+    console.log("Event listener was clicked - Handler3");
+}
+
+evtlst.addEventListener("click", (e) => {
+    console.log("Event listener was clicked - Handler4");
+});
+
+btn1.removeEventListener("click",handler3);
