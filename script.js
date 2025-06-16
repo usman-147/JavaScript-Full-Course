@@ -43,3 +43,22 @@ evtlst.addEventListener("click", (e) => {
 });
 
 btn1.removeEventListener("click",handler3);
+
+let toggleButton = document.querySelector("#toggleButton");
+let body = document.querySelector("body");
+let mode="light";
+
+toggleButton.addEventListener("click", () => {
+    if(mode==="light"){
+        mode="dark";
+        // document.querySelector("body").style.backgroundColor="black";
+        body.classList.remove("light");
+        body.classList.add("dark");
+    }else{
+        mode="light";
+        // document.querySelector("body").style.backgroundColor="white";
+        body.classList.remove("dark");
+        body.classList.add("light");
+    }
+    console.log(mode);
+});
