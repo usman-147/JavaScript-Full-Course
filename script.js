@@ -79,3 +79,16 @@ let arr=["apple","mango","banana"];
 console.log(arr);
 console.log(`Prototype push : ${arr.push("litchi")}`);
 console.log(arr);
+
+// Creating our own prototype
+const employee = {
+    calcTax() {
+        console.log(`The tax rate is 10%`);
+    },
+};
+console.log(employee);
+const karanArjun = {
+    salary:50000,
+};
+console.log(karanArjun);
+karanArjun.__proto__=employee;
