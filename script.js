@@ -71,4 +71,11 @@ const student = {
         console.log(`marks = ${this.marks}`) // this.marks refers to student.marks
     },
 };
+console.log(student);
 console.log(`Prototype toString : ${student.toString}`);
+
+// Prototypes in Arrays
+let arr=["apple","mango","banana"];
+console.log(arr);
+console.log(`Prototype push : ${arr.push("litchi")}`);
+console.log(arr);
