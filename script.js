@@ -62,3 +62,13 @@ toggleButton.addEventListener("click", () => {
     }
     console.log(mode);
 });
+
+// Prototypes in JS
+const student = {
+    fullName:"Mohammed Usman",
+    marks:85.76,
+    printMarks:function (){
+        console.log(`marks = ${this.marks}`) // this.marks refers to student.marks
+    },
+};
+console.log(`Prototype toString : ${student.toString}`);
