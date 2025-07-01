@@ -158,3 +158,25 @@ class Engineer1 extends Person1{
     }
 }
 let engObj=new Engineer1("chemical engineering");
+console.log(engObj)
+
+class Person2{
+    constructor(name){
+        this.species="homo sapiens";
+        this.name=name;
+    }
+    eat(){
+        console.log(`eat`);
+    }
+}
+class Engineer2 extends Person2{
+    constructor(name){
+        super(name);
+    }
+    work(){
+        super.eat();
+        console.log(`solve problems, build something`);
+    }
+}
+let engObj1=new Engineer2("usman");
+console.log(engObj1);
