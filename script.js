@@ -208,3 +208,16 @@ let student2=new User("imran","imran@email.com");
 let teacher1=new User("ramesh","ramesh@email.com");
 
 let admin1=new Admin("suresh","suresh@email.com");
+
+// Error Handling
+let a=10;
+let b=15;
+console.log(`a = ${a}`);
+console.log(`b = ${b}`);
+console.log(`a+b = ${a+b}`);
+try{
+    console.log(`a+c = ${a+c}`);
+} catch(err){
+    console.log(err);
+}
+console.log(`a+b = ${a+b}`);
