@@ -111,3 +111,33 @@ let fortuner=new ToyotaCar("fortuner",10);
 console.log(fortuner);
 let lexus=new ToyotaCar("lexus",12); // if nothings pass gives undefined rather throwing an error
 console.log(lexus);
+
+// Inheritance in JS
+class Person{
+    constructor(){
+        this.species="homo sapiens";
+    }
+    eat(){
+        console.log(`eat`);
+    }
+    sleep(){
+        console.log(`sleep`);
+    }
+    work(){
+        console.log(`do nothing`);
+    }
+}
+class Engineer extends Person{
+    work(){
+        console.log(`solve problems, build something`);
+    }
+}
+class Doctor extends Person{
+    work(){
+        console.log(`treat patients`);
+    }
+}
+let usman=new Engineer();
+console.log(usman);
+let imran=new Doctor(); 
+console.log(imran);
