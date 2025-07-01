@@ -141,3 +141,20 @@ let usman=new Engineer();
 console.log(usman);
 let imran=new Doctor(); 
 console.log(imran);
+
+// super keyword
+class Person1{
+    constructor(){
+        console.log(`enter parent constructor`);
+        this.species="homo sapiens";
+    }
+}
+class Engineer1 extends Person1{
+    constructor(branch){
+        console.log(`enter child constructor`);
+        super(); // to invoke parent class constructor
+        this.branch=branch;
+        console.log(`exit child constructor`);
+    }
+}
+let engObj=new Engineer1("chemical engineering");
