@@ -180,3 +180,31 @@ class Engineer2 extends Person2{
 }
 let engObj1=new Engineer2("usman");
 console.log(engObj1);
+
+// Practice Set 10
+let DATA="secret infromation";
+class User{
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
+    }
+    viewData(){
+        console.log(`Data = ${DATA}`)
+    }
+}
+class Admin  extends User{
+    constructor(name,email){
+        super(name,email);
+        // this.name=name;
+        // this.email=email;
+    }
+    editData(){
+        DATA="some new value";
+    }
+}
+let student1=new User("usman","usman@email.com");
+let student2=new User("imran","imran@email.com");
+
+let teacher1=new User("ramesh","ramesh@email.com");
+
+let admin1=new Admin("suresh","suresh@email.com");
