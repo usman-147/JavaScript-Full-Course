@@ -244,3 +244,20 @@ setTimeout(() => {
 
 console.log("doesn't wait for setTimeout, testing asp 3");
 console.log("doesn't wait for setTimeout, testing asp 4");
+
+// Callbacks in JS
+function sum(a, b) {
+  console.log(a + b);
+}
+function calculator(a, b, sumCallback) {
+  sumCallback(a, b);
+}
+// calculator(1, 2, sum);
+calculator(1, 2, (a, b) => {
+  console.log(a + b);
+});
+
+const hello = () => {
+  console.log("hello");
+};
+setTimeout(hello, 3000);
