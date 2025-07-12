@@ -228,3 +228,13 @@ console.log(`a+b = ${a + b}`);
 console.log("testing sp 1");
 console.log("testing sp 2");
 console.log("testing sp 3");
+
+// Asynchronous programming in JS
+function hello() {
+  console.log("hello");
+}
+setTimeout(hello, 4000);
+
+setTimeout(() => {
+  console.log("hello");
+}, 4000);
