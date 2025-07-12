@@ -235,6 +235,12 @@ function hello() {
 }
 setTimeout(hello, 4000);
 
+console.log("testing asp 1");
+console.log("testing asp 2");
+
 setTimeout(() => {
   console.log("hello");
 }, 4000);
+
+console.log("doesn't wait for setTimeout, testing asp 3");
+console.log("doesn't wait for setTimeout, testing asp 4");
