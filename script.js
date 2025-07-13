@@ -334,7 +334,7 @@ function asyncFunc1() {
 function asyncFunc2() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("data1");
+      console.log("data2");
       resolve("success");
     }, 4000);
   });
@@ -370,3 +370,42 @@ getData2(1)
   .then((res) => {
     console.log(res);
   });
+
+// Async-Await
+function api() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("weather data");
+      resolve(200);
+    }, 2000);
+  });
+}
+
+async function getWeatherData() {
+  await api(); // 1st call
+  await api(); // 2nd call
+}
+console.log(getWeatherData());
+
+function getData3(dataID) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`data: ${dataID}`);
+      resolve("success");
+    }, 2000);
+  });
+}
+
+async function getAllData() {
+  console.log("getting data1...");
+  await getData3(1);
+  console.log("getting data2...");
+  await getData3(2);
+  console.log("getting data3...");
+  await getData3(3);
+  console.log("getting data4...");
+  await getData3(4);
+  console.log("getting data5...");
+  await getData3(5);
+}
+console.log(getAllData());
