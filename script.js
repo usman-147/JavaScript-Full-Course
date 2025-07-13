@@ -282,3 +282,23 @@ getData(1, () => {
     });
   });
 });
+
+// Promises
+let promise = new Promise((resolve, reject) => {
+  console.log("I am a promise");
+  resolve("success");
+  // reject("error occured!");
+});
+
+function getData1(dataID, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // console.log(`data: ${dataID}`);
+      // resolve("success");
+      reject("failed");
+      if (getNextData) {
+        getNextData();
+      }
+    }, 2000);
+  });
+}
