@@ -409,3 +409,17 @@ async function getAllData() {
   await getData3(5);
 }
 console.log(getAllData());
+
+// IIFE : Immediately Invoked Function Expression
+(async function getAllData() {
+  console.log("getting data1...");
+  await getData3(1);
+  console.log("getting data2...");
+  await getData3(2);
+  console.log("getting data3...");
+  await getData3(3);
+  console.log("getting data4...");
+  await getData3(4);
+  console.log("getting data5...");
+  await getData3(5);
+})(); // can be used only once, means to access again we have to copy n paste it again!
