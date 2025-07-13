@@ -320,3 +320,53 @@ promise2.then((res) => {
 promise2.catch((err) => {
   console.log(`promise unfulfiled: ${err}`);
 });
+
+// Promise Chaining
+function asyncFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data1");
+      resolve("success");
+    }, 4000);
+  });
+}
+
+function asyncFunc2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data1");
+      resolve("success");
+    }, 4000);
+  });
+}
+
+console.log("fetching data1...");
+let p1 = asyncFunc1();
+p1.then((res) => {
+  console.log(res);
+  console.log("fetching data2...");
+  let p2 = asyncFunc2();
+  p2.then((res) => {
+    console.log(res);
+  });
+});
+
+function getData2(dataID) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`data: ${dataID}`);
+      resolve("success");
+    }, 2000);
+  });
+}
+
+getData2(1)
+  .then((res) => {
+    return getData2(2);
+  })
+  .then((res) => {
+    return getData2(3);
+  })
+  .then((res) => {
+    console.log(res);
+  });
