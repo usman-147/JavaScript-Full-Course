@@ -214,6 +214,7 @@ let admin1 = new Admin("suresh", "suresh@email.com");
 // Error Handling
 let a = 10;
 let b = 15;
+let c;
 console.log(`a = ${a}`);
 console.log(`b = ${b}`);
 console.log(`a+b = ${a + b}`);
@@ -302,3 +303,20 @@ function getData1(dataID, getNextData) {
     }, 2000);
   });
 }
+
+// .then() & .catch()
+const getPromise = () => {
+  return new Promise((resolve, reject) => {
+    console.log("Second Promise");
+    resolve("success");
+  });
+};
+
+let promise2 = getPromise();
+promise2.then((res) => {
+  console.log(`promise fulfilled: ${res}`);
+});
+
+promise2.catch((err) => {
+  console.log(`promise unfulfiled: ${err}`);
+});
