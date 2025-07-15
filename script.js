@@ -427,7 +427,7 @@ console.log(getAllData());
 // fetch API
 const URL = "https://meowfacts.herokuapp.com";
 const factPara = document.querySelector("#fact");
-const btn = document.querySelector("#btn");
+const btn = document.querySelector("#getBtn");
 
 // Promise Chaining method
 // function getFacts() {
@@ -452,7 +452,7 @@ const getFacts = async () => {
   factPara.innerText = factText;
 };
 
-btn.addEventListener("click", getFacts);
+getBtn.addEventListener("click", getFacts);
 // console.log(getFacts());
 
 // to handle error, so that you won't silently fail
@@ -467,3 +467,34 @@ btn.addEventListener("click", getFacts);
 //     console.error(err);
 //   }
 // };
+
+// Send POST REQUEST
+const postFact = async () => {
+  try {
+    const fact = factPara.innerText;
+    if (!fact || fact === "Click “Get Fact” to see one here") {
+      // ensures we have a fact to send
+      alert("Fetch a fact first!");
+      return;
+    }
+
+    const postResp = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fact }),
+    });
+
+    if (!postResp.ok) throw new Error(`POST failed: ${postResp.status}`);
+
+    const result = await postResp.json();
+    console.log("Server said:", result);
+    alert("Fact posted successfully!");
+  } catch (err) {
+    console.error(err);
+    alert("Failed to post the fact.");
+  }
+};
+
+postBtn.addEventListener("click", postFact);
