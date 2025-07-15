@@ -423,3 +423,47 @@ console.log(getAllData());
   console.log("getting data5...");
   await getData3(5);
 })(); // can be used only once, means to access again we have to copy n paste it again!
+
+// fetch API
+const URL = "https://meowfacts.herokuapp.com";
+const factPara = document.querySelector("#fact");
+const btn = document.querySelector("#btn");
+
+// Promise Chaining method
+// function getFacts() {
+//   fetch(URL)
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       factPara.innerText = data[0].text;
+//     });
+// };
+
+const getFacts = async () => {
+  console.log("getting data...");
+  let response = await fetch(URL);
+  console.log(response); //JSON format
+  const json = await response.json(); // .json() converts into readable format
+  console.log(json); // logs { data: [ "Cats sleep 70%..." ] }
+  // extract the fact string
+  const factText = json.data[0];
+  factPara.innerText = factText;
+};
+
+btn.addEventListener("click", getFacts);
+// console.log(getFacts());
+
+// to handle error, so that you won't silently fail
+// const getFacts = async () => {
+//   try {
+//     const resp = await fetch(URL);
+//     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+//     const { data } = await resp.json();
+//     factPara.innerText = data[0];
+//   } catch (err) {
+//     factPara.innerText = "Could not fetch a cat fact";
+//     console.error(err);
+//   }
+// };
